@@ -14,9 +14,9 @@ api.post({url: "/hypesquad/online",body:{house_id: 1}})
 # You must change last part [{house_id: ...}](https://github.com/k4g9/Getting-HypeSquad-Badges/blob/main/code.js) for different hypesquad badges
 | Value | HypeSquad Hose | Badge |
 |:------:|:---------:|:-------:|
-| 1 | Bravery | ![Bravery](https://github.com/k4g9/Getting-HypeSquad-Badges/blob/main/Bravery.png) |
-| 2 | Brilliance | ![Brilliance](https://github.com/k4g9/Getting-HypeSquad-Badges/blob/main/Brilliance.png) |
-| 3 | Balance | ![Balance](https://github.com/k4g9/Getting-HypeSquad-Badges/blob/main/Balance.png) |
+| 1 | Bravery | ![Bravery](Bravery.png) |
+| 2 | Brilliance | ![Brilliance](Brilliance.png) |
+| 3 | Balance | ![Balance](Balance.png) |
 ---
-## Credits: [Dziurwa](https://github.com/Dziurwa14)
-![badges.png](https://cdn.discordapp.com/attachments/1437841870553350194/1437841871060730029/badges.png?ex=6914b617&is=69136497&hm=72c4dde688edee21bbb1b2f95cad32c8b37ecbf014664aaa7122c0e10b4bf7a6&)
+![badges.png](badges.png)
+**Credits: [Dziurwa](https://github.com/Dziurwa14)**
