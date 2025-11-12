@@ -1,4 +1,4 @@
-# Paste the code to `Console`
+# Paste the code to `Console` in Discord
 > For browser press `F12`
 
 > For desktop client press `Ctrl + Shift + I`
