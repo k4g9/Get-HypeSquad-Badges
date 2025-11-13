@@ -1,3 +1,5 @@
+# Get-HypeSquad-Badges (really, not client-sided)
+
 # Paste the code to `Console` in Discord
 > For browser press `F12`
 
