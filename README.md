@@ -3,12 +3,20 @@
 ## Paste the code to `Console` in Discord
 > For browser press `F12`  -  For desktop client press `Ctrl + Shift + I`
 ```js
-let _mods = webpackChunkdiscord_app.push([[Symbol()], {}, (e) => e.c]);
+let wreq = webpackChunkdiscord_app.push([[Symbol()],{},r=>r]);
 webpackChunkdiscord_app.pop();
+const chunks = Object.entries(wreq.m)
+const findChunkByCode = (...codes) => {
+    for (let i = 0; i < chunks.length; i++) {
+        const [id,func] = chunks[i]
+        const chunkCode = func.toString()
 
-let findByProps=(...e)=>{for(let r of Object.values(_mods))try{if(!r.exports||r.exports===window)continue;if(e.every(e=>r.exports?.[e]))return r.exports;for(let t in r.exports)if(e.every(e=>r.exports?.[t]?.[e])&&"IntlMessagesProxy"!==r.exports[t][Symbol.toStringTag])return r.exports[t]}catch{}};
+        if (codes.every(code=>chunkCode.includes(code))) return wreq(id)
+    }
+}
 
-const api = findByProps("Jt", "tn").tn;
+const api = Object.values(findChunkByCode("HTTPUtils")).find(e=>e?.get)
+
 api.post({url: "/hypesquad/online",body:{house_id: 1}})
 ```
 <details>
@@ -32,13 +40,21 @@ allow pasting
 ### Paste this code into `Console` then your Badge gonna be removed
 
 ```js
-let _mods = webpackChunkdiscord_app.push([[Symbol()], {}, (e) => e.c]);
+let wreq = webpackChunkdiscord_app.push([[Symbol()],{},r=>r]);
 webpackChunkdiscord_app.pop();
+const chunks = Object.entries(wreq.m)
+const findChunkByCode = (...codes) => {
+    for (let i = 0; i < chunks.length; i++) {
+        const [id,func] = chunks[i]
+        const chunkCode = func.toString()
 
-let findByProps=(...e)=>{for(let r of Object.values(_mods))try{if(!r.exports||r.exports===window)continue;if(e.every(e=>r.exports?.[e]))return r.exports;for(let t in r.exports)if(e.every(e=>r.exports?.[t]?.[e])&&"IntlMessagesProxy"!==r.exports[t][Symbol.toStringTag])return r.exports[t]}catch{}};
+        if (codes.every(code=>chunkCode.includes(code))) return wreq(id)
+    }
+}
 
-const api = findByProps("Jt", "tn").tn;
-api.del("/hypesquad/online")
+const api = Object.values(findChunkByCode("HTTPUtils")).find(e=>e?.get)
+
+api.del({url: "/hypesquad/online"})
 ```
 </details>
 
