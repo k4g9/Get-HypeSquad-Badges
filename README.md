@@ -20,7 +20,7 @@ const api = Object.values(findChunkByCode("HTTPUtils")).find(e=>e?.get)
 api.post({url: "/hypesquad/online",body:{house_id: 1}})
 ```
 <details>
-  <summary>What you should do if you can't paste the code?</summary>
+  <summary>What you should do if you can't paste the code? (Click here to view)</summary>
 
 ### Type these 3 separately in the `Console`, it will allow you to paste the code into the console  
 
@@ -35,7 +35,7 @@ allow pasting
 ```
 </details>
 <details>
-  <summary>How to remove the Badge?</summary>
+  <summary>How to remove the Badge? (Click here to view)</summary>
 
 ### Paste this code into `Console` then your Badge gonna be removed
 
